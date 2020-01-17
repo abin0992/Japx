@@ -12,11 +12,8 @@ let package = Package(
             targets: ["Japx"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.0"),
-        .package(url: "https://github.com/Alamofire/Alamofire", from: "5.0.0"),
-        .package(url: "https://github.com/Quick/Nimble", from: "8.0.5"),
-        .package(url: "https://github.com/Moya/Moya", from: "13.0.1"),
-        .package(url: "https://github.com/ReactiveX/RxSwift", from: "5.0.1")
+        // Dependencies declare other packages that this package depends on.
+        // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
