@@ -12,9 +12,9 @@ let package = Package(
             targets: ["Japx"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire", from: "4.9"),
-        .package(url: "https://github.com/ReactiveX/RxSwift", from: "5.0"),
-        .package(url: "https://github.com/Moya/Moya.git", from: "13.0")
+        .package(url: "https://github.com/Alamofire/Alamofire", from: "4.9.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift", from: "5.0.0"),
+        .package(url: "https://github.com/Moya/Moya.git", from: "13.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
