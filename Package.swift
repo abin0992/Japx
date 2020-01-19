@@ -12,8 +12,8 @@ let package = Package(
             targets: ["Japx"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire", from: "4.9.0"),
-        .package(url: "https://github.com/ReactiveX/RxSwift", from: "5.0.0"),
+        .package(url: "https://github.com/Alamofire/Alamofire", .upToNextMajor(from: "4.1.0")),
+        .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMajor(from: "4.0.0")),
         .package(url: "https://github.com/Moya/Moya.git", from: "13.0.0")
     ],
     targets: [
