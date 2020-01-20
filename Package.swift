@@ -23,37 +23,71 @@ let package = Package(
             name: "Japx",
             dependencies: []),
         .target(
-            name: "Japx/Codable",
+            name: "JapxCodable",
             dependencies: [
                 "Japx"],
             exclude: [
                 "Example"]),
         .target(
-            name: "Japx/Alamofire",
+            name: "JapxAlamofire",
             dependencies: [
                 "Japx",
                 "Alamofire"],
             exclude: [
                 "Example"]),
         .target(
-            name: "Japx/RxAlamofire",
+            name: "JapxRxAlamofire",
             dependencies: [
-                "Japx/Alamofire",
+                "JapxAlamofire",
                 "RxSwift"],
             exclude: [
                 "Example"]),
         .target(
-            name: "Japx/CodableAlamofire",
+            name: "JapxCodableAlamofire",
             dependencies: [
-                "Japx/Alamofire",
-                "Japx/Codable"],
+                "JapxAlamofire",
+                "JapxCodable"],
         exclude: [
             "Example"]),
         .target(
-            name: "Japx/RxCodableAlamofire",
+            name: "JapxRxCodableAlamofire",
             dependencies: [
-                "Japx/CodableAlamofire",
-                "Japx/RxAlamofire"],
+                "JapxCodableAlamofire",
+                "JapxRxAlamofire"],
+        exclude: [
+            "Example"]),
+        .target(
+            name: "JapxMoya",
+            dependencies: [
+                "Japx",
+                "Moya"
+            ],
+        exclude: [
+            "Example"]),
+        .target(
+            name: "JapxRxMoya",
+            dependencies: [
+                "RxSwift",
+                "Moya"
+            ],
+        exclude: [
+            "Example"]),
+        .target(
+            name: "JapxCodableMoya",
+            dependencies: [
+                "Japx",
+                "JapxCodable",
+                "JapxMoya"
+            ],
+        exclude: [
+            "Example"]),
+        .target(
+            name: "JapxRxCodableMoya",
+            dependencies: [
+                "Japx",
+                "JapxCodableMoya",
+                "JapxRxMoya"
+            ],
         exclude: [
             "Example"]),
         .testTarget(

@@ -34,58 +34,58 @@ It works by transfering Dictionary to Dictionary, so you can use Codable, Unbox,
   end
 
   s.subspec 'Codable' do |sp| 
-    sp.source_files = 'Sources/Japx/Codable/**/*'
+    sp.source_files = 'Sources/JapxCodable/**/*'
     sp.dependency 'Japx/Core'
   end
 
   s.subspec 'Alamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/Alamofire/**/*'
+    sp.source_files = 'Sources/JapxAlamofire/**/*'
     sp.dependency 'Japx/Core'
     sp.dependency 'Alamofire', '~> 4.9'
   end
 
   s.subspec 'RxAlamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/RxAlamofire/**/*'
+    sp.source_files = 'Sources/JapxRxAlamofire/**/*'
     sp.dependency 'Japx/Alamofire'
     sp.dependency 'RxSwift', '~> 5.0'
   end
 
   s.subspec 'CodableAlamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/CodableAlamofire/**/*'
-    sp.dependency 'Japx/Alamofire'
-    sp.dependency 'Japx/Codable'
+    sp.source_files = 'Sources/JapxCodableAlamofire/**/*'
+    sp.dependency 'JapxAlamofire'
+    sp.dependency 'JapxCodable'
   end
 
   s.subspec 'RxCodableAlamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/RxCodableAlamofire/**/*'
-    sp.dependency 'Japx/CodableAlamofire'
-    sp.dependency 'Japx/RxAlamofire'
+    sp.source_files = 'Sources/JapxRxCodableAlamofire/**/*'
+    sp.dependency 'JapxCodableAlamofire'
+    sp.dependency 'JapxRxAlamofire'
   end
   
   s.subspec 'Moya' do |sp|
-    sp.source_files = 'Sources/Japx/Moya/**/*'
+    sp.source_files = 'Sources/JapxMoya/**/*'
     sp.dependency 'Japx/Core'
     sp.dependency 'Moya/Core', '~> 13.0'
   end
   
   s.subspec 'RxMoya' do |sp|
-    sp.source_files = 'Sources/Japx/RxMoya/**/*'
-    sp.dependency 'Japx/Moya'
+    sp.source_files = 'Sources/JapxRxMoya/**/*'
+    sp.dependency 'JapxMoya'
     sp.dependency 'Moya/RxSwift', '~> 13.0'
   end
   
   s.subspec 'CodableMoya' do |sp|
-    sp.source_files = 'Sources/Japx/CodableMoya/**/*'
+    sp.source_files = 'Sources/JapxCodableMoya/**/*'
     sp.dependency 'Japx/Core'
-    sp.dependency 'Japx/Codable'
-    sp.dependency 'Japx/Moya'
+    sp.dependency 'JapxCodable'
+    sp.dependency 'JapxMoya'
   end
   
   s.subspec 'RxCodableMoya' do |sp|
-      sp.source_files = 'Sources/Japx/RxCodableMoya/**/*'
+      sp.source_files = 'Sources/JapxRxCodableMoya/**/*'
       sp.dependency 'Japx/Core'
-      sp.dependency 'Japx/CodableMoya'
-      sp.dependency 'Japx/RxMoya'
+      sp.dependency 'JapxCodableMoya'
+      sp.dependency 'JapxRxMoya'
   end
 
   s.subspec 'ObjC' do |sp|
