@@ -29,67 +29,67 @@ It works by transfering Dictionary to Dictionary, so you can use Codable, Unbox,
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |sp| 
-    sp.source_files = 'Sources/Japx/Classes/Core/**/*'
+    sp.source_files = 'Sources/Japx/Core/**/*'
     sp.frameworks = 'Foundation'
   end
 
   s.subspec 'Codable' do |sp| 
-    sp.source_files = 'Sources/Japx/Classes/Codable/**/*'
+    sp.source_files = 'Sources/Japx/Codable/**/*'
     sp.dependency 'Japx/Core'
   end
 
   s.subspec 'Alamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/Classes/Alamofire/**/*'
+    sp.source_files = 'Sources/Japx/Alamofire/**/*'
     sp.dependency 'Japx/Core'
     sp.dependency 'Alamofire', '~> 4.9'
   end
 
   s.subspec 'RxAlamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/Classes/RxAlamofire/**/*'
+    sp.source_files = 'Sources/Japx/RxAlamofire/**/*'
     sp.dependency 'Japx/Alamofire'
     sp.dependency 'RxSwift', '~> 5.0'
   end
 
   s.subspec 'CodableAlamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/Classes/CodableAlamofire/**/*'
+    sp.source_files = 'Sources/Japx/CodableAlamofire/**/*'
     sp.dependency 'Japx/Alamofire'
     sp.dependency 'Japx/Codable'
   end
 
   s.subspec 'RxCodableAlamofire' do |sp| 
-    sp.source_files = 'Sources/Japx/Classes/RxCodableAlamofire/**/*'
+    sp.source_files = 'Sources/Japx/RxCodableAlamofire/**/*'
     sp.dependency 'Japx/CodableAlamofire'
     sp.dependency 'Japx/RxAlamofire'
   end
   
   s.subspec 'Moya' do |sp|
-    sp.source_files = 'Sources/Japx/Classes/Moya/**/*'
+    sp.source_files = 'Sources/Japx/Moya/**/*'
     sp.dependency 'Japx/Core'
     sp.dependency 'Moya/Core', '~> 13.0'
   end
   
   s.subspec 'RxMoya' do |sp|
-    sp.source_files = 'Sources/Japx/Classes/RxMoya/**/*'
+    sp.source_files = 'Sources/Japx/RxMoya/**/*'
     sp.dependency 'Japx/Moya'
     sp.dependency 'Moya/RxSwift', '~> 13.0'
   end
   
   s.subspec 'CodableMoya' do |sp|
-    sp.source_files = 'Sources/Japx/Classes/CodableMoya/**/*'
+    sp.source_files = 'Sources/Japx/CodableMoya/**/*'
     sp.dependency 'Japx/Core'
     sp.dependency 'Japx/Codable'
     sp.dependency 'Japx/Moya'
   end
   
   s.subspec 'RxCodableMoya' do |sp|
-      sp.source_files = 'Sources/Japx/Classes/RxCodableMoya/**/*'
+      sp.source_files = 'Sources/Japx/RxCodableMoya/**/*'
       sp.dependency 'Japx/Core'
       sp.dependency 'Japx/CodableMoya'
       sp.dependency 'Japx/RxMoya'
   end
 
   s.subspec 'ObjC' do |sp|
-      sp.source_files = 'Sources/Japx/Classes/ObjC/**/*'
+      sp.source_files = 'Sources/Japx/ObjC/**/*'
       sp.dependency 'Japx/Core'
   end
 

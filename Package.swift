@@ -22,6 +22,40 @@ let package = Package(
         .target(
             name: "Japx",
             dependencies: []),
+        .target(
+            name: "Japx/Codable",
+            dependencies: [
+                "Japx"],
+            exclude: [
+                "Example"]),
+        .target(
+            name: "Japx/Alamofire",
+            dependencies: [
+                "Japx",
+                "Alamofire"],
+            exclude: [
+                "Example"]),
+        .target(
+            name: "Japx/RxAlamofire",
+            dependencies: [
+                "Japx/Alamofire",
+                "RxSwift"],
+            exclude: [
+                "Example"]),
+        .target(
+            name: "Japx/CodableAlamofire",
+            dependencies: [
+                "Japx/Alamofire",
+                "Japx/Codable"],
+        exclude: [
+            "Example"]),
+        .target(
+            name: "Japx/RxCodableAlamofire",
+            dependencies: [
+                "Japx/CodableAlamofire",
+                "Japx/RxAlamofire"],
+        exclude: [
+            "Example"]),
         .testTarget(
             name: "JapxTests",
             dependencies: ["Japx"]),
